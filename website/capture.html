@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add to HomeTab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bookmarks.css">
+    <link rel="stylesheet" href="capture.css">
+    <script defer src="bookmarks-model.js"></script>
+    <script defer src="bookmarks-html.js"></script>
+    <script defer src="file-store.js"></script>
+    <script defer src="favicons.js"></script>
+    <script defer src="capture.js"></script>
+</head>
+<body>
+    <main class="capture-shell">
+        <h1>Add to HomeTab</h1>
+        <p id="capture-status" role="status">Reading your bookmarks file…</p>
+        <form id="capture-form">
+            <label>Title<input id="capture-title" maxlength="2000" required></label>
+            <label>Address<input id="capture-url" type="url" required></label>
+            <label>Find a folder<input id="capture-folder-filter" type="search" placeholder="Search folders…" autocomplete="off"></label>
+            <label>Save in<select id="capture-location" required size="5"></select></label>
+            <label class="capture-check"><input id="capture-favicon" type="checkbox"> Include favicon</label>
+            <div class="capture-actions"><button type="button" id="capture-home">Open HomeTab</button><button type="submit" id="capture-save" disabled>Save</button></div>
+        </form>
+    </main>
+</body>
+</html>

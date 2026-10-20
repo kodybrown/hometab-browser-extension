@@ -1,0 +1,13 @@
+body { min-width: 350px; }
+.capture-shell { max-width: 520px; padding: 24px; margin: 0 auto; }
+.capture-shell h1 { font-size: 23px; }
+#capture-status { color: var(--muted); font-size: 12px; margin: 12px 0 18px; overflow-wrap: anywhere; }
+.capture-shell label { display: block; margin: 14px 0; font-size: 12px; }
+.capture-shell input, .capture-shell select { display: block; width: 100%; margin-top: 6px; padding: 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); }
+.capture-actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+.capture-shell .capture-check { display: flex; align-items: center; gap: 8px; }
+.capture-shell .capture-check input { display: inline-block; width: auto; margin: 0; }
+.capture-actions button { font: inherit; font-size: 12px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); }
+#capture-save { background: var(--accent-soft); color: var(--accent); }
+.capture-actions button:disabled { opacity: .5; cursor: default; }
+@media (max-width: 380px) { body { min-width: 300px; } .capture-shell { padding: 18px; } }
